@@ -2,9 +2,9 @@
 
 /**
  * h_of_node - Computes the height of a binary tree.
- * @tree: Pointer to a binary tree.
- * @n: The height.
- * @height: A pointer to a variable to store value.
+ * @node: Pointer to a binary tree.
+ * @i: The height.
+ * @h: A pointer to a variable to store value.
  */
 void h_of_node(const binary_tree_t *node, size_t i, size_t *h)
 {
@@ -24,7 +24,7 @@ void h_of_node(const binary_tree_t *node, size_t i, size_t *h)
 }
 
 /**
- * binary_tree_height - function that measures the 
+ * binary_tree_height - function that measures the
  * height of a binary tree.
  * @tree: Pionter to the binary tree.
  *
@@ -38,3 +38,4 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	h_of_node(tree, 0, &h);
 	return (h);
 }
+
